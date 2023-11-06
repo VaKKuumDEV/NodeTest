@@ -1,0 +1,112 @@
+.wp-block.property.list {
+    border: 1px solid #e0eded;
+    margin-bottom: 15px !important;
+    padding: 15px 15px 0 15px;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+
+    .wp-block-img {
+        display: table-cell;
+        width: 250px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .wp-block-content {
+        .content-title {
+            font-size: 20px;
+            color: #3498db;
+            margin-bottom: 5px;
+        }
+
+        .description {
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0eded;
+        }
+    }
+
+    .wp-block-body {
+        .wp-block-content {
+            display: table-cell;
+            vertical-align: top;
+            padding-left: 15px;
+        }
+    }
+
+    .wp-block-footer {
+        ul.aux-info {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: block;
+            background: #fcfcfc;
+            border-top: 1px solid #e0eded;
+
+            li {
+                display: table-cell;
+                padding: 10px 15px;
+                vertical-align: middle;
+                border-right: 1px solid #e0eded;
+            }
+        }
+    }
+}
+
+.wp-block {
+    margin: 0 0 15px 0;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+    position: relative;
+    cursor: default;
+    border-radius: 2px;
+
+    .wp-block-body {
+        padding: 15px;
+    }
+}
+
+.ribbon.base {
+    background: #3498db;
+    color: #fff;
+    border-right: 5px solid #8bc4ea;
+
+    &:before {
+        border-top: 27px solid #3498db;
+    }
+
+    &:after {
+        border-bottom: 27px solid #3498db;
+    }
+}
+
+.ribbon {
+    position: absolute;
+    top: 20px;
+    right: -5px;
+    padding: 15px;
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: -9px;
+        border-left: 10px solid transparent;
+        top: 0;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: -9px;
+        border-left: 10px solid transparent;
+        bottom: 0;
+    }
+}
+
+.base {
+    background: #3498db;
+    color: #fff !important;
+}
